@@ -7,14 +7,14 @@ function Nav(props) {
         <header className="flex-row px-1">
       <h2>
         <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"> 📸</span> Oh Snap!
+          <span  aria-label=""> </span> 
         </a>
       </h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
             <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About me
+              Bio
             </a>
           </li>
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
