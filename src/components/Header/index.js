@@ -1,18 +1,18 @@
 import React from 'react';
-import { Nav } from '../Nav';
+import  Nav from '../Nav';
 
 function Header(props) {
-    const { currentTab, setCurrentTab } = props;
+    const { contactSelected, setContactSelected } = props;
     
     return(
         <header>
-            <div>
+            
                 <Nav
-                currentTab={currentTab}
-                setCurrentTab={setCurrentTab}>
+                contactSelected={contactSelected}
+                setContactSelected={setContactSelected}>
 
                 </Nav>
-            </div>
+            
         </header>
     )
 }

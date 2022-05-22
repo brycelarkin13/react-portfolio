@@ -6,17 +6,17 @@ import ContactForm from './components/Contact';
 import './App.css';
 
 function App() {
-  const [currentTab, setCurrentTab] = useState('about');
+  const [contactSelected, setContactSelected] = useState('about');
 
 
   return (
     <div>
       <div>
-      <Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
+      <Header contactSelected={contactSelected} setContactSelected={setContactSelected}></Header>
       </div>
-      <main> {!currentTab ? (
+      <main> {!contactSelected ? (
           <>
-          <About currentTab={currentTab}></About>
+          <About></About>
           <Portfolio></Portfolio>
           </>
         ) : (
