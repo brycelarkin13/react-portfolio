@@ -2,8 +2,10 @@ import React from 'react';
 import photo from '../../assets/images/h-landingpage.jpg';
 
 
+
 function Projects() {
-   
+  
+
     return (
      <div className='flex-row space-between'>
        <div>
